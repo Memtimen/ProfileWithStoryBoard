@@ -21,5 +21,11 @@ class TableViewController: UITableViewController {
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         self.delegate?.tableviewDidScroll(scrollView.contentOffset.y)
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
 
 }

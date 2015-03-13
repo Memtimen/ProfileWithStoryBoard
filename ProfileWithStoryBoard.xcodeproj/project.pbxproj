@@ -15,6 +15,7 @@
 		C46BB4FB1A9156AD008E7365 /* ProfileWithStoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46BB4FA1A9156AD008E7365 /* ProfileWithStoryBoardTests.swift */; };
 		C46BB5051A915707008E7365 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46BB5041A915707008E7365 /* TableViewController.swift */; };
 		C47607C21A9D656F005DF60F /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47607C11A9D656F005DF60F /* UI.swift */; };
+		C4AB9FB61AB264D1000352FC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AB9FB51AB264D1000352FC /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		C46BB4FA1A9156AD008E7365 /* ProfileWithStoryBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWithStoryBoardTests.swift; sourceTree = "<group>"; };
 		C46BB5041A915707008E7365 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C47607C11A9D656F005DF60F /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UI.swift; path = ProfileWithStoryBoard/UI.swift; sourceTree = "<group>"; };
+		C4AB9FB51AB264D1000352FC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AB9FB61AB264D1000352FC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		C46BB4D61A9156AD008E7365 = {
 			isa = PBXGroup;
 			children = (
+				C4AB9FB51AB264D1000352FC /* MapKit.framework */,
 				C47607C11A9D656F005DF60F /* UI.swift */,
 				C46BB4E11A9156AD008E7365 /* ProfileWithStoryBoard */,
 				C46BB4F71A9156AD008E7365 /* ProfileWithStoryBoardTests */,
@@ -306,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -343,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

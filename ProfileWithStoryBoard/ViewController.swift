@@ -29,6 +29,8 @@ class ViewController: UIViewController,TableViewForProfileDelegate {
         tableviewController?.delegate = self
         inset = tableviewController?.tableView.contentInset.top
         widthOfView = CGRectGetWidth(self.view.frame)
+        imageViewForUserPhoto.layer.borderColor = UIColor.whiteColor().CGColor
+        imageViewForUserPhoto.layer.borderWidth = 4
     }
 
     //MARK: TableviewDetegate
@@ -51,7 +53,7 @@ class ViewController: UIViewController,TableViewForProfileDelegate {
                 self.viewForNavi.alpha = 0
         }
         
-        //for
+        //for alpha... this is magic
         if offSetY >= -150 {
             var 😜 = sqrt(offSetY / -150)
             var 👻 = abs(offSetY / -150) * 😜 * 😜 * 😜 * 😜 * 😜 * 😜 * 😜 * 😜 * 😜 * 😜
@@ -69,4 +71,10 @@ class ViewController: UIViewController,TableViewForProfileDelegate {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
+    
+    @IBAction func ChangeCoverPhoto(sender: AnyObject) {
+        var number = arc4random() % 44
+        self.imageViewForCover.image = UIImage(named: "g\(number)")
+    }
+    
 }
